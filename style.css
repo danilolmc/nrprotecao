@@ -2,6 +2,7 @@
 
 :root {
   --dark-blue: #0f3963;
+  --light-blue: #123c66;
   --white: #ffffff;
   --light-yellow: #fcfbb8;
   --very-light-gray: #eeeeee;
@@ -108,8 +109,6 @@ header nav div.contact-container span:hover {
 }
 
 div.main-content-header {
-  /* margin: 25% 5rem; */
-  /* border: 1px solid green; */
   height: calc(100vh - 100px);
   display: flex;
   flex-direction: column-reverse;
@@ -136,7 +135,7 @@ div.main-content-header h2 {
   margin: 2rem 0;
 }
 
-div.main-content-header button {
+div.main-content-header #button {
   color: #fff;
   font-size: 1rem;
   padding: 0.7rem 2rem;
@@ -144,9 +143,43 @@ div.main-content-header button {
   font-weight: 300;
   background: var(--dark-blue);
   margin-top: 2rem;
-  transition: filter 0.5s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
-div.main-content-header button:hover {
+div.main-content-header #button:hover {
   filter: brightness(1.15);
+}
+
+section.gestao-plng-consul {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+}
+
+section.gestao-plng-consul div {
+  max-width: 80%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.gestao-plng-consul div span {
+  display: grid;
+  place-items: center;
+}
+
+section.gestao-plng-consul div span div {
+  background: var(--dark-blue);
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  width: 200px;
+  height: 160px;
+  display: grid;
+  place-content: center;
+}
+
+section.gestao-plng-consul div img {
+  width: 70px;
+  height: 70px;
 }
