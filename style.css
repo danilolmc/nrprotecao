@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap");
 
 :root {
   --dark-blue: #0f3963;
@@ -15,12 +15,138 @@
   padding: 0;
   box-sizing: border-box;
   outline: 0;
+  font-family: "Roboto";
+}
+
+ul {
+  list-style: none;
 }
 
 button {
   cursor: pointer;
+  border: 0;
+  outline: 0;
 }
 
 p {
   cursor: context-menu;
+}
+
+header {
+  background: url("./img/headerBg.png") no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+section.header-content {
+  max-width: 1024px;
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin: 1.5rem 0.5rem;
+  color: #fff;
+  padding: 1.8rem;
+}
+
+header nav div.logo-container {
+  display: flex;
+  align-items: center;
+  color: var(--light-yellow);
+}
+header nav div.logo-container span {
+  color: var(--light-yellow);
+  height: 100%;
+  font-size: 1rem;
+  margin: 0 1rem;
+}
+
+header nav img {
+  width: 35px;
+  height: 35px;
+}
+
+header nav ul {
+  display: flex;
+  height: 30px;
+  transform: translateY(5px);
+  align-items: center;
+}
+
+header nav ul li {
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  border-bottom: 2px solid transparent;
+  height: 100%;
+  padding-bottom: 1.2rem;
+}
+
+header nav ul li:hover {
+  border-color: var(--light-yellow);
+}
+
+header nav div.contact-container span {
+  margin: 0 0.2rem;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+header nav div.contact-container span:hover {
+  margin: 0 0.2rem;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  color: var(--light-yellow);
+}
+
+div.main-content-header {
+  /* margin: 25% 5rem; */
+  /* border: 1px solid green; */
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+div.main-content-header div {
+  width: 80%;
+}
+
+div.main-content-header h1 {
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 300;
+  max-width: 80%;
+}
+
+div.main-content-header h2 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 300;
+  max-width: 75%;
+  margin: 2rem 0;
+}
+
+div.main-content-header button {
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.7rem 2rem;
+  border-radius: 20px;
+  font-weight: 300;
+  background: var(--dark-blue);
+  margin-top: 2rem;
+  transition: filter 0.5s ease-in-out;
+}
+
+div.main-content-header button:hover {
+  filter: brightness(1.15);
 }
