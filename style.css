@@ -33,7 +33,7 @@ p {
   cursor: context-menu;
 }
 
-header {
+body > header {
   background: url("./img/headerBg.png") no-repeat;
   background-size: cover;
   display: flex;
@@ -151,16 +151,18 @@ div.main-content-header #button:hover {
 }
 
 section.gestao-plng-consul {
-  height: 70vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
+  padding: 15vh 0;
 }
 
-section.gestao-plng-consul div {
+section.gestao-plng-consul > div {
   max-width: 80%;
   flex-grow: 1;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 }
 
@@ -172,9 +174,9 @@ section.gestao-plng-consul div span {
 section.gestao-plng-consul div span div {
   background: var(--dark-blue);
   border-radius: 50%;
-  margin-bottom: 2rem;
-  width: 200px;
-  height: 160px;
+  margin: 2rem 3.5rem;
+  min-width: 150px;
+  min-height: 150px;
   display: grid;
   place-content: center;
 }
@@ -182,4 +184,71 @@ section.gestao-plng-consul div span div {
 section.gestao-plng-consul div img {
   width: 70px;
   height: 70px;
+}
+
+section.sobre-nos {
+  height: 89vh;
+  background: url("./img/about.png") no-repeat;
+  background-size: cover;
+  padding: 12vh 8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section.sobre-nos > * {
+  width: 70%;
+  font-family: "Roboto";
+  color: #fff;
+}
+
+section.sobre-nos header {
+  height: 30%;
+  color: #fff;
+  max-width: 80%;
+  display: flex;
+  font-weight: 300;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+section.sobre-nos header * {
+  margin-bottom: 2rem;
+}
+
+section.sobre-nos header h1,
+h2,
+h4 {
+  font-weight: 300;
+}
+
+section.sobre-nos header h4 {
+  font-size: 15px;
+}
+
+section.sobre-nos header h1 {
+  font-size: 2.3rem;
+}
+
+section.sobre-nos button {
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.7rem 2rem;
+  border-radius: 20px;
+  font-weight: 300;
+  background: var(--dark-blue);
+  margin-top: 2rem;
+  max-width: 190px;
+  transition: 0.4s ease-in-out;
+}
+
+section.sobre-nos button:hover {
+  filter: brightness(1.15);
+}
+
+section.sobre-nos p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 27px;
 }
