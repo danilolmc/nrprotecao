@@ -143,7 +143,6 @@ div.main-content-header #button {
   font-weight: 300;
   background: var(--dark-blue);
   margin-top: 2rem;
-  transition: 0.4s ease-in-out;
 }
 
 div.main-content-header #button:hover {
@@ -151,7 +150,7 @@ div.main-content-header #button:hover {
 }
 
 section.gestao-plng-consul {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   padding: 15vh 0;
@@ -169,6 +168,8 @@ section.gestao-plng-consul > div {
 section.gestao-plng-consul div span {
   display: grid;
   place-items: center;
+  margin: 10% 0;
+  flex-grow: 1;
 }
 
 section.gestao-plng-consul div span div {
@@ -187,7 +188,7 @@ section.gestao-plng-consul div img {
 }
 
 section.sobre-nos {
-  height: 89vh;
+  min-height: 89vh;
   background: url("./img/about.png") no-repeat;
   background-size: cover;
   padding: 12vh 8vw;
@@ -200,6 +201,7 @@ section.sobre-nos > * {
   width: 70%;
   font-family: "Roboto";
   color: #fff;
+  /* border: 1px solid red; */
 }
 
 section.sobre-nos header {
@@ -210,7 +212,6 @@ section.sobre-nos header {
   font-weight: 300;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 4rem;
 }
 
 section.sobre-nos header * {
